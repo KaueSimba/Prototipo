@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+.espaco{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav .menu{
+    display: flex;
+    justify-content: flex-end;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.menu .menu-items {
+    padding: 20px;
+}
+
+.menu .menu-items a{
+    text-decoration: none;
+    color: rgb(0, 2, 107);
+    font-family: 'Poppins', monospace;
+    font-weight: bold;
+}
+.menu .menu-items a:hover{
+    color: rgb(228, 194, 0);
+}
+.menu .menu-items a:before{
+    content: '|';
+    margin-right: 5px;
+    width: auto;
+    height: 5px;
+}
+
+.logo{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 400px;
+}
+
+.scrolling{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.scrolling p{
+    font-size: 100px;
+    animation: jump 2s infinite;
+}
+
+
+main{
+    background-color: #73b7f7;
+}
+
+.sec-list-exemples{
+    width: 1000px;
+    margin: 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.list-exemples{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-exemples-items{
+    width: 30%;
+    padding: 0 0 0 20px;
+    margin-bottom: 4em;
+    border-left: 4px solid;
+}
+  
+
+.list-exemples-items p{
+    margin-bottom: 1em;
+}
+
+@keyframes jump{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.logo{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(8%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
+    
+
+
+  
+  
